@@ -13,7 +13,7 @@ body { padding-top: 50px; }
 #cv-photo img { width: 160px; height: 160px; border-radius: 50%; }
 #cv-intro h1 { margin: 0; padding: 0; font-size: 2.4em; font-weight: 700;
                letter-spacing: -1px;}
-#cv-intro h1 span { color: rgb(226,0,26); }
+#cv-intro h1 span { color: blue; }
 #cv-intro::after { background: url('images/ligne.png'); /* Dossier "images" est un sousdossier de "css" (à créer) */
                    width: 100%; height: 3px; margin-top: 15px; content: ''; display: block;}
 
@@ -22,7 +22,7 @@ body { padding-top: 50px; }
 * Rubriques
 ****************************************/
 .rubrique { margin-bottom: 15px; }
-.rubrique h2 { color: rgb(226,0,26); }
+.rubrique h2 { color:blue; }
 .rubrique h2::before{ margin-right: 5px; }
 .rubrique p{ font-size: 1.3em; line-height: 1.5em; }
 
@@ -35,7 +35,7 @@ body { padding-top: 50px; }
  display: block; background: linear-gradient(to bottom, #ffffff 0%, 
  #E2001A 7%, #E2001A, #ffffff 100%); content:""; }
 #parcours li { width: 100%; z-index: 2; position: relative; float: left; }
-#parcours .date .glyphicon-record::before { background: #FFFFFF; color: #555; }
+#parcours .date .glyphicon-record::before { background: #FFFFFF; color:blue; }
 #parcours .date { width: 75px; background-color: rgba(0, 0, 0, 0); font-size: 1.5em;
  font-weight: 700; display: inline-block; }
 #parcours .details { width: 325px; display: inline-block; background: #eee;
@@ -43,7 +43,7 @@ body { padding-top: 50px; }
  border-bottom: 1px solid #ddd; margin: -4px -12px 20px 0; }
 #parcours .details::after { content: ''; position: absolute; top: 15px; right: 0;
  left: -16px; height: 0; width: 0; border: solid transparent;
- border-right-color: #eee; border-width: 8px;
+ border-right-color:blue; border-width: 8px;
  pointer-events: none; }
 #parcours .details h3{ font-size: 1.5em; margin: 0; padding: 0; font-weight: 700; }
 #parcours .details p{ font-size: 1.3em; margin-top: 5px; padding: 0; }
@@ -83,3 +83,36 @@ body { padding-top: 50px; }
 .meContacter a:hover>img { filter: grayscale(0); -webkit-filter: grayscale(0);
  -moz-filter: grayscale(0); -ms-filter: grayscale(0);
  -o-filter: grayscale(0); }
+
+/******************************************
+* Langues
+******************************************/
+#langues .container { display: flex; flex-direction: row;justify-content: space-between;  }
+#langues .langue, #langues .niveau{ font-size: 1.3em;  }
+#langues .langue { padding-top: 3px; }
+
+/******************************************
+* Compétences
+******************************************/
+#competences .container {
+ display: flex; flex-direction: row ;justify-content: space-between; }
+#competences .container .libelle { font-size: 1.3em;  }
+#competences .container .classement {
+ background: scroll transparent url(images/Red-Rating-Stars.png) no-repeat;
+ width: 160px; height: 27px; }
+#competences .container .classement0 { background-position: 0 -142px; }
+#competences .container .classement1 { background-position: 0 -112px; }
+#competences .container .classement2 { background-position: 0 -84px; }
+#competences .container .classement3 { background-position: 0 -56px; }
+#competences .container .classement4 { background-position: 0 -28px; }
+#competences .container .classement5 { background-position: 0 0px; }
+
+/******************************************
+* Passions
+******************************************/
+#Passions.container {
+ display:block   ; flex-direction: row ;justify-content: space-between; 
+}
+#container.type{  
+ font-size: 1.3em;    
+}
